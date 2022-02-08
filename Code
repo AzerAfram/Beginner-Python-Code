@@ -1,0 +1,835 @@
+
+print("   /|")
+print("  / |")
+print(" /  |")
+print("/___|")
+print("6" + "5")
+Name_of_retard = "Azer"
+Age_of_retard = 16
+print(Name_of_retard + " was, is, and forever will be a Legend")
+print("The legend, " + Name_of_retard + " was many times bigger than The Hulk")
+print("Keep in mind He was only " + str(Age_of_retard) + " years of age")
+Name_of_legend = "Mina"
+print("He was a legend throughout all the land with his head so big and a butt built like a pig... " + Name_of_legend)
+is_legend = True
+is_retarded = True
+thickest_babe_in_the_land = True
+has_brain = False
+print("Azer\nAfram")
+print("He said, \"I WILL KILL YOU ALL\"")
+Name_of_legend = "azer"
+print("There was a man named " + Name_of_legend.upper() + " he was quite a menace".upper())
+print(Name_of_legend.isupper())
+print(Name_of_legend.upper().isupper())
+print(len(Name_of_legend))
+print(Name_of_legend[0])
+print(Name_of_legend.index("a"))
+print(Name_of_legend.replace("azer", "mina").upper())
+retard_number = 5
+print(abs(retard_number))
+print(max(retard_number, 7))
+print(min(retard_number, .3))
+print(round(6.5))
+top_secret_info = input("What are thou specfic dimensions of thine head?\n:")
+print(str(top_secret_info.upper()) + ("!!!??? LORD GOD ALMIGHTY SAVE US ALL!"))
+Name_of_user = input("First and last name:")
+print("Hey there " + Name_of_user + "!!")
+my_stuff = input("what is your age?: ")
+print("Wow ".upper() + my_stuff + " years!!".upper())
+try:
+    User_years_of_citizenship = input("Years of citizenship: ")
+    User_years_of_residency = input("Years of U.S residency: ")
+    Sum = float(User_years_of_citizenship) + float(User_years_of_residency)
+    print(str(Sum) + (" years!"))
+except ValueError:
+    print("Invalid entry")
+Cheeks = input("Specefic description of thine cheecks: ")
+Head = input("Specific description of thine head: ")
+head = input("Specific description of thine head: ")
+print("With his cheeks so " + Cheeks)
+print("And his head so " + Head)
+print("Thus, he could not be stopped running around with a head so " + head)
+Greatest_attributes_of_the_Bu = ["Humongous head", "fat cheeks", "long head"]
+print("Best of the Bu is his " + Greatest_attributes_of_the_Bu[0])
+print(Greatest_attributes_of_the_Bu[0:2])
+Greatest_attributes_of_the_Bu[2] = "microscopic shsmall"
+print(Greatest_attributes_of_the_Bu[2])
+Friends = ["Happy Bu", "Mad Bu", "Crazy Bu"]
+Ages_of_family = [10, 4, 5, 33, 44]
+Friends.sort()
+print(Friends)
+coordinates = [(54), (55), (44), ]
+print(coordinates[1])
+name = input("First and last name: ")
+hobby = input("Favorite hobby: ")
+
+
+def say_hi(name, hobby):
+    print("Hello " + name + " your favorite hobby is " + hobby)
+
+
+say_hi("Azer", "football")
+
+
+def cube(num):
+    return num * num * num
+
+
+print(cube(3))
+bored = True
+Bu_is_awake = True
+if bored and Bu_is_awake:
+    print("Smack the Bu")
+if not bored or not Bu_is_awake:
+    print("Leave the Bu alone")
+Bu_is_mad = True
+if Bu_is_mad and not bored:
+    print("leave poor guy alone")
+if Bu_is_mad or bored:
+    print("Smack the kid anyways")
+if bored and not Bu_is_mad:
+    print("Jump on Bu")
+
+
+def max_num(num1, num2, num3):
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    if num2 >= num1 and num2 >= num3:
+        return num2
+    if num3 >= num1 and num3 >= num2:
+        return num3
+
+
+print(max_num(55, 77, 99))
+try:
+    num1 = float(input("Enter number: "))
+    op = (input("Enter operator: "))
+    num2 = float(input("Enter second number: "))
+    if op == "+":
+        print(num1 + num2)
+    elif op == "-":
+        print(num1 - num2)
+    elif op == "*":
+        print(num1 * num2)
+    elif op == "/":
+        print(num1 / num2)
+    else:
+        print("invalid operator")
+except ValueError:
+    print("Invalid Entry")
+
+i = 2
+while i <= 5:
+    print(i)
+    i += 1
+
+print("Loop is finished")
+secret_word = "cheeks"
+guess = " "
+tries = 0
+guess_limit = 10
+Limit_reached = False
+while guess != secret_word and not Limit_reached:  # guess game
+    if tries <= guess_limit:
+        guess = input("Enter your guess ")
+        tries = tries + 1
+    if tries >= guess_limit:
+        Limit_reached = True
+if guess != secret_word:
+    print("Failed! ")
+if guess == secret_word:
+    print("Success!")
+Secret = "st"
+guess1 = ""
+guesses = 0
+Guess_limit = 10
+out_of_guess = False
+while guess1 != Secret and not out_of_guess:
+    if guesses <= Guess_limit:
+        guess1 = input("Type your guess:")
+        guesses = guesses + 1
+    if guesses >= Guess_limit:
+        out_of_guess = True
+if guess1 == Secret:
+    print("Success ")
+if guess1 != Secret:
+    print("Failed ")
+name = "Azer"
+for bu in name:
+    print(bu)
+name2 = "Azer", "Mina"
+for BU in name2:
+    print(name2)
+
+
+def cubed(base_numb, pow_num):
+    result = 1
+    for index in range(pow_num):
+        result = result * pow_num
+    return result
+
+
+print(cubed(4, 3))
+
+
+# import useful_tools_file/can import code from another python file and/or a specific function from that file
+# External libraries/Lib to get external modules
+class The_Bu:  # class, can create universal data that later can be specified and changed but will stay in the same data "space" or variables
+    def __init__(self, call, cheeks, head_diameter, is_hot):
+        self.call = call
+        self.cheeks = cheeks
+        self.head_diameter = head_diameter
+        self.ishot = is_hot
+
+
+The_bu = The_Bu("Mina", "Huge cheeks", "Moon",
+                True)  # An object is a specified/described version of a class through those same "spaces" or variables
+print(The_bu.call)
+
+
+class Question:  # Multiple choice quize: First create a class to store the instructions and answer of a question so we can specify them later
+    def __init__(self, prompt, answer):
+        self.prompt = prompt
+        self.answer = answer
+
+
+question_prompts = [
+    "1. What is the best attribute of the Bu?\n (a) His head\n (b) His cheeks \n (c) His mighty strength\n:",
+    "2. Who is the best?\n (a) Mad Bu\n (b) Happy Bu\n (c) Crazy Bu\n:",
+    "3. Who would win in a fight?\n (a) Bu\n (b) Godzilla\n (c) King Kong\n:"
+]  # ',' will divide an array as above or anything else into different numbers/sections which can later be called upon
+questions = [
+    Question(question_prompts[0], "a"),
+    Question(question_prompts[1], "c"),
+    Question(question_prompts[2], "a"),
+]
+
+
+def test(questions):
+    score = 0
+    for Question in questions:
+        answer = input(Question.prompt)
+        if answer == Question.answer:
+            score += 1
+    print("You got " + str(score) + " out of " + str((len(question_prompts))))
+    if score == 0:  # Make sure to leave out 'str' in an if statement
+        print("MA Lord you need Jesus you seriuosly got a " + str(score) + " out of " + (str(len(question_prompts))))
+    elif score == 1:  # If given 'Syntax error' on a colon of an if statem --> check the brackets of the line before it
+        print("Boy you a complete failure over here getting " + str(score) + " out of " + (str(len(question_prompts))))
+    elif score == 2:
+        print("You still dumb as hell you got " + str(score) + " out of " + (str(len(question_prompts))))
+    else:
+        print("Dont go around thinking you smart or something you got a " + str(score) + " out of " + (
+            str(len(question_prompts))))
+
+
+test(questions)  # Make sure to run the created function
+
+
+# Create a class to store the type of data needed for each question
+class Question1:
+    def __init__(self, instructions, answer, answer1, ):
+        self.instructions = instructions
+        self.answer = answer
+        self.answer1 = answer1
+
+
+# Now I need an array to list the data needed for each of the three questions, instruction/question and the answer
+question_instruction_answers = ["What is your name?\n(a)Azer\n(b)Mina\n(c)duh\n(d)yuh\n:",
+                                "What is your favorite food?\n(a)Pizza\n(b)Ice cream\n(c)Meat\n(d)Math\n:",
+                                ]
+# Now I have to list my two objects/questions using the class above in a new array
+Object_questions = Question1(question_instruction_answers[0], "a", "azer"),
+Question1(question_instruction_answers[1], "c", "meat"),
+
+
+# Now I need to create a function using a for loop to loop through and ask and check both questions and the text to be said for each score
+def Test(Object_questions):  # user input based test with output according to score.
+    score = 0
+    for Question1 in Object_questions:
+        answer = input(Question1.instructions)
+        if answer == (Question1.answer.upper()) or (Question1.answer1.upper()):
+            score += 1
+    if score == 0:
+        print("You dumb as hell, you got a " + str(score) + " out of " + str(len(question_instruction_answers)))
+    elif score == 1:
+        print(
+            "You still stupid as way bua you got a " + str(score) + " out of " + str(len(question_instruction_answers)))
+    else:
+        print("You got a " + str(score) + " out of " + str(len(question_instruction_answers)))
+
+
+Test(Object_questions)
+
+
+# Create class with 3 of a persons attribute so we can specify those attributes for each person later
+class Employee:
+    empCount = 0
+
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+        Employee.empCount += 1
+
+    def name_salary(self):
+        print("Employee name is " + self.name + " There salary is " + str(self.salary))
+
+    def emp_count(self):
+        print("The employer count is " + Employee.empCount)
+
+
+emp1 = Employee("Fwank", 5)
+emp2 = Employee("Zart the Fart", 3)
+emp1.name_salary()
+emp2.name_salary()
+
+
+class csu_student:
+    def __init__(self, name, major, gpa, school):
+        self.name = name
+        self.major = major
+        self.gpa = gpa
+        self.school = school
+
+    # Create a function in the class to tell if a student has a gpa higher than 3
+    def honorStudent(self):
+        if self.gpa >= 3:
+            print(self.name + " is on honor roll")
+        else:
+            print(self.name + " is not on honor roll")
+
+
+student1 = csu_student("Bob", "Computer Science", 4, "CSU", )
+student2 = csu_student("Sam", "Art", 2.5, "CSU", )
+print(student1.honorStudent())
+
+
+class csb_student(csu_student):  # Inheritance the honor roll function from above
+    student_count = 0
+
+    def __init__(self, name, major, school, gpa):
+        self.name = name
+        self.major = major
+        self.school = school
+        self.gpa = gpa
+        csb_student.student_count += 1
+
+    def studentInfo(self):
+        print("Name: " + self.name + "\nMajor: " + self.major + "\nAttending: " + self.school)
+
+
+csbStudent = csb_student("Bu", "Education", "CSB", 5)
+csbStudent2 = csb_student("Mad Bu", "History", "CSB", 2.8)
+csbStudent.studentInfo()
+csbStudent2.studentInfo()
+csbStudent.honorStudent()
+print("The student count in CSB is " + str(csb_student.student_count))
+print("The employee count is  " + str(Employee.empCount))
+
+
+# Create class with no positionals
+class bu_Emotions:
+    def __init__(self):
+        self.__madBu = "The Bu is currently fuming"
+        self.happyBu = "The Bu is currently cheerful"
+
+    def roblox_Anger(self):
+        print(self.__madBu + " because of Roblox")
+
+    def other_Anger(self):
+        print(self.__madBu + " because of another circumstance")
+
+
+Addict_BU = bu_Emotions()
+
+Addict_BU.other_Anger()
+
+# Fizz Buzz question
+def fizzbuzz(Limit):
+    for number in range(Limit):
+        if number % 15 == 0:
+            print("FizzBuzz")
+        elif number % 5 == 0:
+            print("Buzz")
+        elif number % 3 == 0:
+            print("Fizz")
+        else:
+            print(number)
+
+fizzbuzz(31)
+
+
+# List .append which is to add a something to that list or .insert which will insert something where it is wanted
+emotions = ["Happy", "Mad", "Crazy"]
+emotions.append("Fuming")
+print(emotions)
+emotions.insert(0, "Energetic")
+print(emotions)
+emotions.remove("Mad")
+print(emotions)
+emotions.sort()
+print(emotions)
+add10 = lambda x: x + 10
+print(add10(5))
+
+
+table = [lambda x=x: x * 10 for x in range(11)]
+for numbers in table:
+    print(numbers())
+# name = lambda variable1 and 2: variable1 if 'conditional' else variable 2
+cheekSize = lambda x, y: x if (x > y) else y
+print(cheekSize(40000, 500000))
+lo = [16, 88, 90, 20, 5, 4, 7, 55, ]
+finalList = list(filter(lambda x: (x % 2) != 0, lo))
+print(finalList)
+import logging
+# practice with logging.
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s')
+logger = logging.getLogger()
+logger.debug("Debug")
+logger.info("Info")
+logger.warning("Warning")
+logger.error("Error")
+logger.critical("Critical")
+
+# logging an exception/ if a command or program goes wrong it will be logged
+import logging
+
+try:
+    printf("Numbers")
+except Exception as Argument:  # both argument and except first letter has to be caps
+    logging.exception("Issue while printing numbers")
+# Transfer a python dictionary/object to json and json file
+import json  # import the json file to get access to commands
+
+person = {"name": "john", "age": 30, "city": "New York", "hasChildren": False}  # the object that we will turn to json
+# this is just to print the normal dictionary in python  form
+# Now we want to print the same but instead in json form with an indent of 4
+personJSON = json.dumps(person, indent=4)
+print(personJSON)
+
+# How to turn an object into json format
+import json
+from json import JSONEncoder
+class person:
+
+
+    def __init__(self, name1, age1):
+        self.name1 = name1
+        self.age1 = age1
+
+bob = person("Bob", 5)
+
+
+class obj_to_json(JSONEncoder):  # object to JSON, there are a few ways to do this.
+# func name needs to be 'default'
+    def default(self, x):
+        if isinstance(x, person):
+            return {"name": x.name1, "age": x.age1}
+
+        return super().default(x)
+
+bob_JSON = json.dumps(bob, cls=obj_to_json)
+print(bob_JSON)
+
+
+import random
+# this function will times 10 each number from range 1 to 10
+a = random.randint(1, 11)
+print(a)
+
+
+
+numbers = [lambda x=x: x*10 for x in range(11)]
+for yuh in numbers:
+    print(yuh())
+
+# created a function to print my name
+# he then created a function that takes one function
+# that function/wrapper says start before a function and end after
+# he then used decorator on the first func by @ then parent func name
+# this is only if the modified func takes no arguments
+
+
+def this_decorator(func):
+    def wrapper():
+        print("Start")
+        func()
+        print("End")
+    return wrapper
+
+
+@this_decorator
+def display_name():
+    print("Azer")
+
+
+display_name()
+
+
+# this is how to use decorator if the modified
+# func has arguments
+
+import functools
+
+
+def decorator(func): # parent func
+    @functools.wraps(func)
+    def start_end(*args, **kwargs):
+        print("Start")
+        result = func(*args, **kwargs)
+        print("End")
+        return result
+    return start_end
+
+
+@decorator
+def add5(x):   # Child func
+    c = x + 5
+    print(float(c))
+
+
+add5(5)
+
+
+
+age = input("What is your age?\n:")
+if age == 1:
+    print(str(age) + " year old")
+else:
+    print(str(age) + " years old")
+
+
+
+# Function decorator
+
+
+def decorator(num_times): # we need to take in 'num_times' here because we cant take it in a wrapper
+    def decorator_repeat(func): # this func will take in the function 'wrapper'
+        @functools.wraps(func) # Will take in func 'wrapper' so it can use arguments
+        def wrapper(*args, **kwargs):
+            for x in range(num_times):
+                func(*args, **kwargs)   # we cannot return directly return
+            return func(*args, **kwargs)
+        return wrapper                      # a func using 'return' instead
+    return decorator_repeat                 # we must create variable ('result')
+                                            # which will represent the func
+
+# We also cant return our function in the for loop
+# because if we do the, it will just go through the
+# for loop once then instanly end the for loop
+# which causes the return of only one instead of the
+# number of 'num_times' argument
+
+@decorator(num_times=3)
+def display_name(name):
+    print("Hello " + name)
+
+
+display_name("Azer")
+
+
+import functools
+
+
+def display_start_end(func):  # wrapper function.
+
+    functools.wraps(func)
+
+    def wrapper(*args, **kwargs):
+        print("Start")
+        func(*args, **kwargs)
+        print("End")
+    return wrapper
+
+
+def decorator(func):  # function decorator.
+
+    functools.wraps(func)
+
+    def wrapper(*args, **kwargs):
+        print("Welcome!")
+        func(*args, **kwargs)
+        print("Were glad to have you!")
+    return wrapper
+
+
+@display_start_end    # wrap and decorate our function.
+@decorator
+def say_hi(name):
+    print("Hey there " + name + "!")
+
+
+say_hi("Azer")
+
+
+class class_:  # using class decorators.
+
+    def __init__(self, func):
+        self.func = func
+        self.num_times = 0
+
+    def __call__(self, *args, **kwargs):
+        self.num_times += 1
+        self.func(*args, **kwargs)
+        print("The 'say_wassup' function has been executed " + str(self.num_times) + " times")
+        return
+
+
+@class_  # We want to know how many times the function below is executed
+def say_wassup(name):
+    print("Whats up " + name)
+
+say_wassup("Bu")
+
+
+def g():  # practice with "yield".
+    yield 1
+    yield 2
+    yield 3
+
+
+for value in g():
+    print(value)
+
+
+def countdown(num):  # this function counts down from a given number.
+    print("Starting")
+    while num >= 0:
+        yield num
+        num -= 1
+
+cd = countdown(5)
+
+print(next(cd))
+print(next(cd))
+
+
+def countup(n):   # this function counts up from a given number.
+    num = 0
+    while num <= n:
+        num += 1
+        yield num
+
+print((sum(countup(10))))
+print((sum(countup(10))))
+
+
+def fibonacci(limit):  # this function will build the fibonacci sequence from 0 to the given number.
+    # number = the sum of the two numbers before it
+    a, b = 0, 1
+    while a < limit:
+        yield a
+        a, b = b, a+b
+
+fib = fibonacci(20)
+
+for x in fib:
+    print(x)
+
+
+    def find_num(): # an input and output based "quiz" on a certain unknown word.
+        list = [5, 8, 4, 6, 9, 2]
+        limit = len(list)
+        for tries in range(limit):
+            try:
+                tries += 1
+                answer = input("Type a guess: ")
+                if int(answer) in list:
+                    print("Correct guess!")
+                else:
+                    print("Wrong!")
+            except ValueError:
+                print("Invalid")
+find_num()
+
+
+# binary search
+
+def search(arr, target, left, right):
+    try:
+
+        while left <= right:
+            mid = (left + right) // 2
+            if arr[mid] == target:
+                print("Found at " + str(arr.index(target)))
+                break
+            elif target < arr[mid]:
+                right = mid -1
+            elif target > arr[mid]:
+                left = mid + 1
+        return 1
+    except IndexError:
+        print("Out of range")
+
+
+arr = [-2, 3, 4, 6, 7, 8, 9, 11, 13]
+result = search(arr, 6, 0, len(arr))
+
+
+if result == 1:
+    print("Not found")
+
+
+
+
+
+#Hexadecimal
+#B3A5
+#B = 11 * 4096
+#3 = 3 * 256
+#A = 10 * 16
+#5 = 5 * 1
+
+
+answer = (11 * 4096) + (3 * 256) + (10 * 16) + (5 * 1)
+print(answer)
+
+
+def bubble_sort(nums): # bubble sort algorithm.
+    while True:
+        corrected = False
+        for starting_index in range(len(nums)-1):
+            if nums[starting_index] > nums[starting_index+1]:
+                nums[starting_index], nums[starting_index+1] = nums[starting_index+1], nums[starting_index]
+                corrected = True
+        if corrected is False:
+            return nums
+
+
+nums = [9, 99, 777, 3, 5, 1, -5]
+print(bubble_sort(nums))
+
+
+def selection_sort(nums): # selection sort algorithm.
+    for starting_index in range(len(nums)):
+        min_index = starting_index
+        for compare_index in range(starting_index, len(nums)):
+            if nums[compare_index] < nums[min_index]:
+                min_index = compare_index
+        if nums[min_index] != nums[starting_index]:
+            nums[min_index], nums[starting_index] = nums[starting_index], nums[min_index]
+    return nums
+
+
+nums1 = [9, 99, 777, 3, 5, 1, -5]
+print(selection_sort(nums1))
+
+
+def cumulative_sum(x): # function to find the cumulative sum of a list.
+    result = []
+    current_sum = 0
+    for value in x:
+        current_sum += value
+        result.append(current_sum)
+    return result
+
+
+x = [1, 2, 3, 4]
+print(cumulative_sum(x))
+
+
+def digital_root(n): # function for finding the digital root of an integer.
+    if n > 9:
+        list1 = [int(d) for d in str(n)]
+
+        total = 0
+        for number in list1:
+            total += number
+
+        if total > 9:
+            return digital_root(total)
+        else:
+            return total
+    else:
+        return n
+
+
+print(digital_root(123455))
+
+
+def remove_smallest(numbers):
+    if len(numbers) == 0:
+        return numbers
+    for number in numbers[:len(numbers)]:
+        if(number == min(numbers)):
+            numbers.remove(number)
+            break
+    return numbers
+def find_uniq(arr):
+    # your code here
+    arr.sort()
+
+    if(arr[0] < arr[len(arr)-1] and arr[0] < arr[len(arr)-2]):
+        n = arr[0]
+    else:
+        n = arr[len(arr)-1]
+
+
+    return n   # n: unique integer in the array
+def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr) //2
+        left_arr = arr[:mid] # colon means that the left arr will start at zero and at end in the middle
+        right_arr = arr[mid:] # and here it will start in the middle and will end at the length of the arr
+
+        # recursion
+        merge_sort(left_arr)
+        merge_sort(right_arr)
+
+
+        # merge
+        i = 0 # left array index
+        j = 0 # right array index
+        k = 0 # merged array index
+        right_length = len(right_arr)
+        left_length = len(left_arr)
+        while i < left_length and j < right_length:
+            if left_arr[i] < right_arr[j]:
+                arr[k] = left_arr[i]
+                i += 1
+            else:
+                arr[k] = right_arr[j]
+                j += 1
+            k += 1
+
+        while i < left_length:
+            arr[k] = left_arr[i]
+            i += 1
+            k += 1
+
+        while j < right_length:
+            arr[k] = right_arr[j]
+            j += 1
+            k += 1
+
+
+arr = [77, 55, 44, 3, 99, 22, 554, 7, 10, 33, 2, 4, 55, 34, 3, 2, 1, 55555]
+merge_sort(arr) # a new array still called 'arr' has been defined by the function
+print(arr) # here we just want to print that array from the function
+
+
+
+
+
+
+def sum_list(list1):
+    sum = 0
+    for number in list1:
+        sum += number
+    return sum
+
+
+list1 = [5, 3, 1, 7, 9, 4]
+print(sum_list(list1))
+
+def ending_of_string(string, ending):
+    if string.endswith(ending):
+        return True
+    else:
+        return False
+
+print(ending_of_string("AVADAKEDAVRA!", "AVRA!"))
+
+
+print(10.7 % 5.8)
